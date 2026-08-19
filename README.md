@@ -23,8 +23,8 @@ The code evaluates three primary validation/falsification metrics:
 | Theoretical Concept | Implementation in `simulation.py` |
 | :--- | :--- |
 | **Configuration Space ($\mathcal{C}_{\text{toy}}$)** | Discrete Grid Graph (`grid_shape`) |
-| **Morphological Resistance $R(q)$** | Structural Tensor/Array (`resistance_map`) |
-| **Action $S = \sum R(q_i, q_{i+1})$** | Accumulated Cost Function in $A^*$ Search (`a_star_search`) |
+| **Morphological Resistance $R(q)$** | Resistance Tensor/Matrix (`resistance_map`) |
+| **Action $S = \sum R(q_i, q_{i+1})$** | Accumulated Cost in $A^*$ Search algorithm (`a_star_search`) |
 | **Arrow of Time / Memory** | Directional Channel Etching (`update_hysteresis`) |
 | **Boundary / Quantum Jump** | High Resistance Penalty Boundary (`compute_step_cost`) |
 
@@ -48,10 +48,3 @@ cd morphological-time-toy-model
 ```bash
 python simulation.py
 ```
-| Theoretical Concept (White Paper) | Code Implementation (`simulation.py`) |
-| :--- | :--- |
-| **Configuration Space** ($\mathcal{C}_{\text{toy}}$) | **Grid/Graph**<br>`grid_shape` |
-| **Morphological Resistance** $R(q)$ | **Resistance Tensor/Matrix**<br>`resistance_map` |
-| **Action** $S = \sum R(q_i, q_{i+1})$ | **Accumulated cost in $A^*$ search algorithm**<br>`a_star_search` |
-| **Arrow of Time / Hysteresis** | **Asymmetric channel deformation**<br>`update_hysteresis` |
-| **Boundary Barrier / Quantum Leap** | **Extreme resistance penalty at boundaries**<br>`compute_step_cost` |
