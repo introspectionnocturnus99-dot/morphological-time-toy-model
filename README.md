@@ -48,3 +48,10 @@ cd morphological-time-toy-model
 ```bash
 python simulation.py
 ```
+| Theoretical Concept (White Paper) | Code Implementation (`simulation.py`) |
+| :--- | :--- |
+| **Configuration Space** ($\mathcal{C}_{\text{toy}}$) | **Grid/Graph**<br>`grid_shape` |
+| **Morphological Resistance** $R(q)$ | **Resistance Tensor/Matrix**<br>`resistance_map` |
+| **Action** $S = \sum R(q_i, q_{i+1})$ | **Accumulated cost in $A^*$ search algorithm**<br>`a_star_search` |
+| **Arrow of Time / Hysteresis** | **Asymmetric channel deformation**<br>`update_hysteresis` |
+| **Boundary Barrier / Quantum Leap** | **Extreme resistance penalty at boundaries**<br>`compute_step_cost` |
