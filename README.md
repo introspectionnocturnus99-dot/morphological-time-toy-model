@@ -1,5 +1,3 @@
-# morphological-time-toy-model
-Python toy model simulation for emergent time via morphological resistance minimization.
 # Morphological Resistance & Emergent Time (Toy Model)
 
 This repository contains the Python computational simulation (**Toy Model**) designed to test the hypothesis of emergent time and causality from the minimization of **Morphological Resistance $R(q)$** within a static Configuration Space $\mathcal{C}_{\text{toy}}$.
@@ -20,19 +18,33 @@ The code evaluates three primary validation/falsification metrics:
 
 ---
 
+## 🔬 Theoretical Mapping (White Paper ↔ Code)
+
+| Theoretical Concept | Implementation in `simulation.py` |
+| :--- | :--- |
+| **Configuration Space ($\mathcal{C}_{\text{toy}}$)** | Discrete Grid Graph (`grid_shape`) |
+| **Morphological Resistance $R(q)$** | Structural Tensor/Array (`resistance_map`) |
+| **Action $S = \sum R(q_i, q_{i+1})$** | Accumulated Cost Function in $A^*$ Search (`a_star_search`) |
+| **Arrow of Time / Memory** | Directional Channel Etching (`update_hysteresis`) |
+| **Boundary / Quantum Jump** | High Resistance Penalty Boundary (`compute_step_cost`) |
+
+---
+
 ## 🛠️ Requirements & Installation
 
 To run the simulation, you need Python 3 and the following dependencies installed:
 
 ```bash
-pip install numpy
-matplotlib```
-
+pip install numpy matplotlib
+```bash
 ## 🚀 Running the Simulation
 
 1. Clone this repository or download the main script:
 ```bash
-git clone [https://github.com/introspectionnocturnus99-dot/morphological-time-toy-model.git]
+git clone https://github.com/introspectionnocturnus99-dot/morphological-time-toy-model.git
+cd morphological-time-toy-model
+```bash
 2. Run the validation script:
 ```bash
 python simulation.py
+```bash
