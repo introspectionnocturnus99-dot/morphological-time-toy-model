@@ -1,7 +1,7 @@
 import numpy as np
 import heapq
 import matplotlib.pyplot as plt
-
+np.random.seed(42)
 class MorphologicalSpace:
     def __init__(self, grid_shape=(20, 20), R0=1.0, alpha=0.5, gamma_relax=0.05):
         """
@@ -193,8 +193,8 @@ def run_simulation():
     plt.ylabel("Configuration State Variable 2")
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("emergent_trajectory.png", dpi=300, bbox_inches='tight')
+    print("     Visualization saved to 'emergent_trajectory.png'")
 
 if __name__ == "__main__":
     run_simulation()
-  
