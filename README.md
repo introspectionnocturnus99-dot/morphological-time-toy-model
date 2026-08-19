@@ -36,15 +36,15 @@ To run the simulation, you need Python 3 and the following dependencies installe
 
 ```bash
 pip install numpy matplotlib
-```bash
+```
 ## 🚀 Running the Simulation
 
 1. Clone this repository or download the main script:
 ```bash
 git clone https://github.com/introspectionnocturnus99-dot/morphological-time-toy-model.git
 cd morphological-time-toy-model
-```bash
+```
 2. Run the validation script:
 ```bash
 python simulation.py
-```bash
+```
