@@ -24,7 +24,7 @@ The code evaluates three primary validation/falsification metrics:
 | :--- | :--- |
 | **Configuration Space ($\mathcal{C}_{\text{toy}}$)** | Discrete Grid Graph (`grid_shape`) |
 | **Morphological Resistance $R(q)$** | Resistance Tensor/Matrix (`resistance_map`) |
-| **Action $S = \sum R(q_i, q_{i+1})$** | Accumulated Cost in $A^*$ Search algorithm (`a_star_search`) |
+| **Action $S = \sum R(q_i, q_{i+1})$** | Accumulated Cost in $A^*$ Search Algorithm (`a_star_search`) |
 | **Arrow of Time / Memory** | Directional Channel Etching (`update_hysteresis`) |
 | **Boundary / Quantum Jump** | High Resistance Penalty Boundary (`compute_step_cost`) |
 
